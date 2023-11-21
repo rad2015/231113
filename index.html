@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Figma Banner </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #wrap {
+            width: 100%;
+            height: 100vh;
+            background: #7B4CDF;
+            position: relative;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        div {
+            position: relative;
+            width: 790px;
+            height: 330px;
+            /* flex-shrink: 0; */
+            background: #7B4CDF;
+        }
+
+        /* NAYOUNG */
+        div .a1 {
+            color: #FFF;
+            text-shadow: 0px 14px 4px rgba(0, 0, 0, 0.25);
+            /* font-family: Inter; */
+            font-size: 110px;
+            /* font-style: normal; */
+            font-weight: 700;
+            /* line-height: normal; */
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2;
+        }
+
+        /* 러브도넛 */
+        div .a2 img {
+            width: 220px;
+            position: absolute;
+            left: 20px;
+        }
+
+        /* 도넛 */
+        div .a3 img {
+            width: 120px;
+            position: absolute;
+            right: 50px;
+            top: 50px;
+        }
+
+        /* 컵 */
+        div .a4 img {
+            width: 220px;
+            position: absolute;
+            right: 100px;
+            bottom: -20px;
+            z-index: 4;
+            animation: bounce 2s infinite;
+            /* 2초 무한반복 */
+        }
+
+        @keyframes bounce {
+
+            0%,
+            20%,
+            50%,
+            80%,
+            100% {
+                transform: translateY(0);
+            }
+
+            40% {
+                transform: translateY(-20px);
+            }
+
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+
+        /* 사람 */
+        div .a5 img {
+            width: 150px;
+            position: absolute;
+            left: 50px;
+            bottom: 20px;
+            z-index: 3;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="wrap">
+        <!-- div>p.a$*5 -->
+        <div>
+            <a href="https://www.dunkindonuts.co.kr/">
+            <p class="a1">NAYOUNG</p>
+            <p class="a2"><img src="./images/love_donut.png" alt="러브도넛"></p>
+            <p class="a3"><img src="./images/donut.png" alt="도넛"></p>
+            <p class="a4"><img src="./images/cup.png" alt="컵"></p>
+            <p class="a5"><img src="./images/person.png" alt="사람"></p>
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>
